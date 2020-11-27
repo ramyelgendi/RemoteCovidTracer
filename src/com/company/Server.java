@@ -5,9 +5,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
-    public void how(){
-
-    }
     public static void main (String[] args ) throws IOException {
 
         int bytesRead;
@@ -18,7 +15,6 @@ public class Server {
         while(true) {
             Socket clientSocket;
             clientSocket = serverSocket.accept();
-
             InputStream in = clientSocket.getInputStream();
 
             // Writing the file to disk
